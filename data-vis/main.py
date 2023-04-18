@@ -36,18 +36,22 @@ while True:
 
   # get the vector
   vector = data[index][0]
-  print(vector.shape)
+  print("found package: ", names[index][0])
 
-  # get the distance to all other vectors with shape (876,384) (0,384) 
-  differences = data - vector
-  distances = np.linalg.norm(differences, axis=1)
+  # get the cosine distance to all other vectors with shape (876,384) (0,384) 
+  # distances = np.dot(data, vector) / (np.linalg.norm(data, axis=1) * np.linalg.norm(vector))
 
+  # get the euclidean distance to all other vectors
+  distances = np.linalg.norm(data - vector, axis=1)
 
   # get the 10 closest vectors
-  closest = np.argsort(distances)[:3]
+  closest = np.argsort(distances)[:5]
+  # remove duplicates
+  closest = np.unique(names[closest])
 
   # print the closest vectors
-  print(names[closest])
+  print(closest)
+  print()
 
 
 

@@ -1,0 +1,19 @@
+Enter a repo name: react
+found package:  react
+['react']
+
+Enter a repo name: jest
+found package:  jest
+['eslint-plugin-jest' 'fork-ts-checker-webpack-plugin' 'jest']
+
+Enter a repo name: ant-design
+found package:  ant-design
+['ant-design' 'formidable' 'moment' 'nunjucks' 'util']
+
+Enter a repo name: dayjs
+found package:  dayjs
+['ant-design' 'dayjs' 'formidable' 'moment' 'moment-timezone']
+
+Enter a repo name: date-fns
+found package:  date-fns
+['bytebuffer.js' 'date-fns' 'dayjs' 'node-bindings' 'serialize-javascript']
